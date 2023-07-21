@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GAPS</title>
+    <link rel="stylesheet" href="donation.css" />
+</head>
+<body>
+    <div class="wrapper" id="wrap">
+        <h2>Donation Form</h2>
+        <form action="donation.php" method="POST" enctype="multipart/form-data">
+            <h4>Bank Details</h4>
+            <div class="input-a">
+                <p>
+                    <b>Bank Name:</b> Paytm Payment Bank
+                </p>
+                <p>
+                    <b>AC No:</b> 918514082388
+                </p>
+                <p>
+                    <b>IFSC Code:</b> PYTM0123456
+                </p>
+            </div>
+            <div class="input-a">
+                <h4 id="det">Transaction Id</h4>
+                <input type="text" placeholder="Enter Transaction Id" required class="tns" name="bank-transaction-id">
+            </div>
+            <div class="input-group">
+                <div class="input-box">
+                    <button type="submit">SEND</button>
+                    </a>
+                </div>
+            </div>
+
+        </form>
+    </div>
+</body>
+</html>

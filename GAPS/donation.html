@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GAPS</title>
+    <link href="donation.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="wrapper">
+        <h2>Donation Form</h2>
+        <form method="POST" action="donation1.php">
+            <div class="form">
+                <h4>Enter Your Details</h4>
+                <div class="input-group">
+                    <div class="input-box">
+                        <input type="text" placeholder="Full Name" required class="name" name="Donername">
+                        <i class="fa fa-user icon"></i>
+                    </div>
+                    <div class="input-box">
+                        <input type="email" placeholder="Email Adress" required class="name" name="email">
+                        <i class="fa fa-envelope icon"></i>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <div class="input-box">
+                        <input type="number" placeholder="Mobile Number" required class="name" name="mobile-number" value="">
+                        <i class="fa fa-mobile icon"></i>
+                    </div>
+                    
+                    <div class="input-box">
+                        <input type="number" placeholder="Enter Amount" required class="name" name="amount">
+                        <i class="fa fa-money icon"></i>
+                    </div>
+                    
+                </div>
+                
+                <div class="input-group">
+                    <div class="input-box">
+                        <h4>Enter Date</h4>
+                        <input type="date" placeholder="" class="dob" name="DOB">
+                    </div>
+                    <div class="input-box">
+                        <h4> Gender</h4>
+                        <div class="aas-paas">
+                            <input type="radio" id="b1" name="gendar" checked class="radio" value="Male">
+                            <label for="b1">Male</label>
+                            <input type="radio" id="b2" name="gendar" class="radio" value="Female">
+                            <label for="b2">Female</label>
+                        </div>
+                    
+                    </div>
+                </div>
+                
+                <div class="input-group">
+                    <div class="input-box">
+                        <h4>Choose Payment Mode</h4>
+                        <div class="aas-paas">
+                            <input type="radio" name="pay" id="bc1"  class="radio" value="UPI">
+                            <label for="bc1"><span>UPI</span></label>
+                            <input type="radio" name="pay" id="bc2" class="radio" value="Bank Transfer">
+                            <label for="bc2"><span>Bank Transfer</span></label>
+                        </div>  
+                    </div>
+                </div>
+                
+                <div class="box">
+                    <div >
+                        <h4>UPI Details</h4>
+                        <div class="input-a">
+                            <p>
+                                <b>UPI ID:</b> 8514082388@paytm
+                            </p>
+                        </div>    
+                    </div>
+                    <div id="input-a">
+                        <div class="input-a">
+                            <h4>QR Code</h4>
+                            <img class="tns" src="qr.jpeg">
+                        </div>
+                    </div>
+                    <div>
+                        <h4>Bank Details</h4>
+                        <div class="input-a">
+                            <p>
+                                <b>Bank Name:</b> Paytm Payment Bank
+                            </p>
+                            <p>
+                                <b>AC No:</b> 918514082388
+                            </p>
+                            <p>
+                                <b>IFSC Code:</b> PYTM0123456
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="input-a">
+                    <h4 id="det">Transaction Id</h4>
+                    <input type="text" placeholder="Enter Transaction Id" required class="tns" name="transaction-id">
+                </div>
+
+                <div class="input-group">
+                    <div class="input-box">
+                        <button type="submit" class="submitbtn">SEND</button>
+                    </div>
+                </div>
+                
+            </div>
+        </form>
+    </div>
+</body>
+</html>

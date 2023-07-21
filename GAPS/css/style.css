@@ -1,0 +1,314 @@
+/*Common style start */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+:root{
+    --themeRed: #e43a47;
+    --gray: #efefef;
+    --yellow: #D0FE1D;
+}
+html{
+    scroll-behavior: smooth;
+}
+button,
+body{
+ font-family: "Poppins", sans-serif;
+}
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+p{
+    font-size:14px;
+    line-height: 26px;
+}
+.fullContainer {
+    width: 100%;
+}
+.container{
+    width: 1140px;
+    margin: auto;
+}
+
+.sectionTitle{
+    width: 300px;
+    border-bottom: 3px solid #000;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 200;
+    margin: 0 auto 50px;
+    position: relative;
+    padding: 10px 0;
+    text-transform: uppercase;
+}
+.sectionTitle::after{
+    display: inline-block;
+    content: "";
+    height:15px;
+    width:15px;
+    background-color: #000;
+    position: absolute;
+    left: calc(50% - 10px);
+    top: calc(75% - 7px);
+    transform: rotate(45deg)translate(50%,50%);
+    border: 3px solid var(--yellow);
+}
+section{
+    padding: 110px 0;
+    position: relative;
+}
+/*common style end*/
+/*Home style start*/
+header{
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+    position: fixed;
+    z-index: 2;
+}
+header .container {
+    display: flex;
+    justify-content: space-between;
+}
+header .container .logo {
+    padding: 15px 0;
+    height: 75px;
+}
+header .container .logo img {
+    position: relative;
+    right: 140px;
+    height:120%;
+}
+header nav ul {
+    List-style-type: none;
+}    
+header nav ul li {
+    display: inline-block;
+}  
+header nav ul li a{
+    position: relative;
+    left:180px;
+    display: inline-block;
+    height: 75px;
+    line-height: 75px;
+    padding: 0 15px;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 14px;
+    color: #fff;
+    transition: 0.3s;
+}
+header nav ul li a:hover{
+    background-color: #000;
+}
+.banner{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url("https://i0.wp.com/epthinktank.eu/wp-content/uploads/2019/04/eprs-briefing-635544-deliveries-youth-empowerment-final.jpg?fit=1000%2C666&ssl=1");
+    background-size: cover;
+    background-attachment: fixed;
+}   
+.banner h1{
+    position: relative;
+    right: 120px;
+    margin-top: 230px;
+    display: inline-block;
+    font-size: 3.5rem;
+    color:#ffff;
+    text-decoration: none;
+    text-transform: bold;
+    text-shadow: 0 0 2px #000;
+    width: 50%;
+    line-height: 4.2rem;
+    font-weight: 100;
+} 
+.banner h1 span{
+    font-size:2rem;
+    color:#fff;
+    background-color:#000;
+    display: inline-block;
+    line-height: 3.5rem;
+    padding: 0 15px;
+    font-weight: 600;
+    border-radius: 5px;
+}
+.banner p{
+    position: relative;
+    right: 120px;
+    color: #fff;
+    width: 50%;
+    text-shadow:0 0 2px #000;
+    margin-top: 10px;
+}
+.banner button{
+    position: relative;
+    right:122px;
+    background-color:#fff;
+    border: 0;
+    outline: none;
+    color:var(--gray);
+    padding: 10px 15px;
+    margin-top:20px;
+    font-size:13px;
+    border-radius:3px;
+    font-weight:600;
+}
+.banner button:hover{
+    cursor:pointer;
+    background-color:#D0FE1D;
+    color:#000;
+}
+/*Home style ends*/
+
+/*AboutSection Start*/
+.fullContainer .sectionTitle{
+    color:#000;
+    text-shadow: 0 0 4px #000;
+}
+#aboutSection .cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 50px;
+    position: relative;
+    height: 245px;
+}
+#aboutSection .cards > div{
+    width: 350px;
+    background-color: var(--gray);
+    padding: 35px;
+    color: #444;
+    text-align: center;
+    border-radius:5px;
+    height: 215px;
+    border: 1px solid var(--yellow);
+    transition:0.5s;
+}
+#aboutSection .cards > div:hover {
+    width: 400px;
+    margin-top: -20px;
+    border-color: #D0FE1D;
+    padding: 55px;
+    height: auto;
+}
+#aboutSection .cards >div .title{
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+#aboutSection .cards > div p{
+    font-size: 14px;
+    margin-top: 15px;
+}
+#aboutSection .cards > div button{
+    border: 1px solid #50C878;
+    outline: none;
+    padding: 7px 15px;
+    margin-top: 15px;
+    font-size: 12px;
+    border-radius: 3px;
+    cursor:pointer;
+    transition: 0.3s;
+}
+#aboutSection .cards > div:hover button{
+    background-color: #000;
+    color:#fff;
+}
+/*AboutSection Ends*/
+/*Education Section Starts*/
+.education{
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+.education{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url("https://www.citiesalliance.org/sites/default/files/2021-11/DSC_1660%20Graduation%20251121.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+} 
+.education .sectionTitle{
+    color:#000;
+    text-shadow: 0 0 4px #000;
+}
+.education .educationContainer{
+    position: absolute;
+    background-color: #00000096;
+    width:600px;
+    top: 35vh;
+    color:#fff;
+    text-shadow: 0 0 3px #000;
+    padding: 30px;
+}
+.education .educationContainer h3{
+    font-size: 35px;
+    font-weight: 300;
+    text-shadow: 0 0 3px #FFD700;
+}
+.education .educationContainer p{
+    font-size:15px;
+    line-height: 20px;
+    margin: 10px 0 30px;
+}
+.education .educationContainer button{
+    background-color: #000;
+    border: 0;
+    color:#D0FE1D;
+    padding: 10px 25px;
+    font-weight: bold;
+    font-size: 14px;
+    outline: #fff;
+    cursor:pointer;
+}
+
+/*Education Ssction Ends*/
+/*gallery Starts here*/
+.gallery .sectionTitle{
+    color:#000;
+    text-shadow: 0 0 4px #000;
+}
+/*.gallery .container p{
+    position: relative;
+    font-size: 99%;
+    font-style: bold;
+    color:#fff;
+    text-shadow: 0 0 4px #000;
+    align: center;
+}*/
+.gallery .galleryContainer{
+    column-count:4;
+    column-gap : 10px;
+}
+.gallery .galleryContainer .item{
+    position: relative;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+.gallery .galleryContainer img{
+    width:100%;
+    display:block;
+    transition: 0.4s;
+}
+.gallery .galleryContainer .title{
+    position: absolute;
+    background-color: var(--gray);
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: bold;
+    opacity: 0;
+    z-index: 1;
+    transition :0.4s;
+}
+.gallery .galleryContainer .item:hover .title{
+    opacity:1;
+}
+.gallery .galleryContainer .item:hover img{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+/*gallery ends here*/
+
+
+    
